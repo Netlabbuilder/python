@@ -15,7 +15,7 @@ app = Flask(__name__)
 @app.route('/online/')
 
 def index():
-	return render_template('reachability_ping_homepage.ht
+	return render_template('reachability_ping_homepage.html')
 
 
 #########
