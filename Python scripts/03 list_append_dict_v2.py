@@ -1,6 +1,5 @@
 #!/usr/bin/env python3.6
 
-
 ###
 #
 # We will create the dictionary inside the FOR loop
