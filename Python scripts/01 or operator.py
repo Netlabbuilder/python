@@ -1,20 +1,20 @@
 #!/usr/bin/env python3.6
 
-#the following examples show us how 'or' operator works
+# The following examples show us how 'or' operator works
 
-# 1. output is: 3
+# 1st example - output is: 3
 a = 3
 b = 5
 print(a or b)
 
 
-# 2. output is: netlabbuilder
+# 2nd example - output is: netlabbuilder
 a = 'netlabbuilder'
 b = 5
 print(a or b)
 
 
-# 3. output is: 5
+# 3rd example - output is: 5
 a = ''
 b = 5
 print(a or b)
