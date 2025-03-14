@@ -2,7 +2,7 @@ import urllib3
 import requests
 import json
 from requests.auth import HTTPBasicAuth
-from dnac_config import DNAC_IP, DNAC_PORT, DNAC_USER, DNAC_PASSWORD
+from dnac_setup import dnac_ip, dnac_port, dnac_user, dnac_password
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
