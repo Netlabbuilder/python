@@ -68,7 +68,7 @@ def main():
 
         # Create a new folder with folder name is the show command. For example, show command is "show run", then the folder name is "show run"
         # Create a new text file named after the device Name. For example, if the device name is device_A, then new file is "device_A.txt" 
-        folder_path = command
+        folder_path = 'results'
         file_name = f"{name}.txt"
 
         file_path = os.path.join(folder_path, file_name)
