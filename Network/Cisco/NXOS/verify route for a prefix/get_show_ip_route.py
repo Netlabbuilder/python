@@ -48,11 +48,15 @@ def main():
     acc_user = input('username:')
     acc_password = getpass.getpass()
 
-    # 44 prefixes to check
-    prefix_44 = "44.216.186.86"
+    # A prefix to be checked (replace 'prefix' with an actual prefix - could be A.B.C.D or A.B.C.D/LEN)
+    prefix = 'prefix'
+    
+    # In case of route lookup in a specific VRF, replace 'vrf_name' with an actual vrf name. For example, if vrf name is 'production', then the value of vrf_option variable is 'vrf production' 
+    # In case of route lookup in the default global VRF, replace 'vrf vrf_name' with ''.
+    vrf_option = 'vrf vrf_name'
 
     # show commands to run
-    command = f'show ip route {prefix_44} vrf hosting'
+    command = f'show ip route {prefix} {vrf_option}'
 
     # Loop through the device list
     for device in devices:
