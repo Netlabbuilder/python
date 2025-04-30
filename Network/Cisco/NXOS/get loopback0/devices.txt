@@ -1,4 +1,4 @@
 IP,Name
-ip_a,name_a
-ip_b,name_b
-wrong_address,Non-exist-hostname
+ip_A,name_A
+ip_B,name_B
+wrong_address,non-exist-hostname
