@@ -1,0 +1,4 @@
+Hostname             Loopback0                      VRF
+name_A               l0_address_A                   production   
+name_B               l0_address_B                   development   
+non-exist-hostname   Failed to connect              Failed to connect
