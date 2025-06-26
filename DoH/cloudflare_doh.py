@@ -40,7 +40,7 @@ def cloudflare_doh(hostname,query_type):
 def main():
 
     hostname = "microsoft.com"
-    # use query_type of "A" for IPv4
+    # Use query_type of "A" for IPv4
     query_type = "AAAA"
     cloudflare_doh(hostname, query_type)
 
