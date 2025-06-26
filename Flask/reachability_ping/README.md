@@ -1,5 +1,5 @@
 # Online Reachability Ping Test
-This script, running on CentOS - Linux, is to verify the reachability of an IP address using 'subprocess' with 'ping -c2 -W2' command.
+This simple script, running on RHEL, is to verify the reachability of an IP address using 'subprocess' with 'ping -c2 -W2' command.
 
 1. When an IP address (8.8.8.8) is reachable - up:
 
