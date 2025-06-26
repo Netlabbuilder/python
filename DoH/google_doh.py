@@ -14,11 +14,11 @@ proxies = {
 def google_doh(hostname, dns_type):
 
     # Use the correct DoH URL for Google's DNS resolver
-    doh = f'https://8.8.8.8/resolve?name={hostname}&type={dns_type}'
+    google_resolver = f'https://8.8.8.8/resolve?name={hostname}&type={dns_type}'
 
     try:
         # Make the request
-        response = requests.get(doh, verify=False, proxies=proxies)
+        response = requests.get(google_resolver, verify=False, proxies=proxies)
 
         # Check if the response was successful
         if response.status_code == 200:
@@ -35,8 +35,8 @@ def google_doh(hostname, dns_type):
 
 def main():
 
-    # hostname = "ip-ranges.amazonaws.com"
     hostname = "microsoft.com"
+    # Use query_type of "AAAA" for IPv6
     query_type = "A"
     google_doh(hostname, query_type)
 
