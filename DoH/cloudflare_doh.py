@@ -14,7 +14,7 @@ proxies = {
 def cloudflare_doh(hostname,query_type):
 
     # Use the correct DoH URL for Cloudflare's DNS resolver
-    cloudflare_hostname = f'https://1.1.1.1/dns-query?name={hostname}&type={query_type}'
+    cloudflare_resolver = f'https://1.1.1.1/dns-query?name={hostname}&type={query_type}'
 
     headers = {
         "accept": "application/dns-json"
@@ -22,7 +22,7 @@ def cloudflare_doh(hostname,query_type):
 
     try:
         # Make the request
-        response = requests.get(cloudflare_hostname, verify=False, proxies=proxies, headers=headers)
+        response = requests.get(cloudflare_resolver, verify=False, proxies=proxies, headers=headers)
 
         # Check if the response was successful
         if response.status_code == 200:
@@ -39,11 +39,10 @@ def cloudflare_doh(hostname,query_type):
 
 def main():
 
-    # hostname = "ip-ranges.amazonaws.com"
     hostname = "microsoft.com"
+    # use query_type of "A" for IPv4
     query_type = "AAAA"
     cloudflare_doh(hostname, query_type)
-
 
 if __name__ == '__main__':
     main()
