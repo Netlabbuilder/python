@@ -1,7 +1,7 @@
 Python scripts to perform remote Domain Name System resolution via the HTTPS protocol - DNS over HTTPS (DoH) using public APIs from Google and Cloudflare.
 
 Sample return:
-***
+```
 {
  "Status": 0,
  "TC": false,
@@ -48,6 +48,5 @@ Sample return:
   }
  ]
 }
-
-***
+```
 
